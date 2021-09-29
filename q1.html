@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    body{
+      /* background-color: #FFA778; */
+      background-image: url("cafe2.jpg");
+      background-repeat: no-repeat;
+      background-position: 60% 40%;
+    }
+      form{
+        text-align: center;
+        margin: 0 auto;
+        border: 1px solid;
+        width: 500px;
+        height: 700px;
+        background-color: beige;
+      }
+      caption{
+        font-size: 25px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="" action="q2.php" method="post">
+      <h1>YNC CAFE</h1> <br><br> 메뉴 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp; 수량 &nbsp&nbsp&nbsp&nbsp&nbsp; 사이즈<br>
+      <input type="checkbox" name="tea[]" value="아메리카노">아메리카노&nbsp&nbsp<select name="num">
+        <option value="0" selected>선택</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <select class="" name="usize">
+          <option value="" selected>Regular</option>
+          <option value="">Large</option>
+        </select> <br>
+      <input type="checkbox" name="tea[]" value="카페라떼">카페라떼&nbsp&nbsp&nbsp&nbsp&nbsp<select name="num1">
+        <option value="0" selected>선택</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select class="" name="usize">
+          <option value="" selected>Regular</option>
+          <option value="">large</option>
+        </select> <br>
+      <input type="checkbox" name="tea[]" value="카페모카">카페모카&nbsp&nbsp&nbsp&nbsp<select name="num2">
+        <option value="0" selected>선택</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select class="" name="usize">
+        <option value="" selected>Regular</option>
+        </select> <br>
+      <input type="checkbox" name="tea[]" value="바닐라라떼">바닐라라떼&nbsp&nbsp&nbsp<select name="num3">
+        <option value="0" selected>선택</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+&nbsp&nbsp&nbsp&nbsp;
+      <select class="" name="usize">
+      <option value="" selected>Regular</option>
+      </select> <br>
+      <input type="hidden" name="price" value="">
+      <br><br><br>
+
+      <table width= "480px";
+      height= "150px";>
+      <caption>COFFEE</caption>
+      <thead>
+             <tr align="center">
+                 <td>사이즈</td>
+                 <th>아메리카노</th>
+                 <th>카페라떼</th>
+                 <th>카페모카</th>
+                 <th>바닐라라떼</th>
+             </tr>
+         </thead>
+
+         <tbody>
+             <tr align="center">
+                 <th>Regular</th>
+                 <td>4.1</td>
+                 <td>4.6</td>
+                 <td>5.6</td>
+                 <td>5.1</td>
+             </tr>
+             <tr align="center">
+               <th>Large</th>
+               <td>4.6</td>
+               <td>5.1</td>
+               <td>6.1</td>
+               <td>5.5</td>
+             </tr>
+         </tbody>
+
+      </table>
+
+      <input type="submit" name="" value="주문하기">
+    </form>
+
+  </body>
+</html>
